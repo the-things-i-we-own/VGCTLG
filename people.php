@@ -94,7 +94,7 @@ fclose($fp);
 <body>
     <ol class="org">
         <h2>People</h2>
-        <p class="update cc_style">
+        <p class="update">
         Last Modified : 
             <?php
             $mod = filemtime('people.csv');
@@ -124,28 +124,6 @@ fclose($fp);
         </li>
         <?php endif; ?>
     </ol>
-
-    <script type="text/javascript ">
-        var volume;
-        var synth;
-        var notes;
-
-        $(document).ready(function(event) {
-            // StartAudioContext(Tone.context, window);  
-            $(window).click(function() {
-                Tone.context.resume();
-            });
-
-            volume = new Tone.Volume(-20);
-            synth = new Tone.PolySynth(10, Tone.Synth).chain(volume, Tone.Master);
-            notes = Tone.Frequency("E6").harmonize([12, 14, 16, 19, 21, 24]);
-        });
-
-        $(".list_toggle").hover(function() {
-            let randNote = Math.floor(Math.random() * notes.length);
-            synth.triggerAttackRelease(notes[randNote], "6n");
-        });
-    </script>
 </body>
 
 </html>
