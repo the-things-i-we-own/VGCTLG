@@ -92,7 +92,7 @@ fclose($fp);
 </head>
 
 <body>
-    <ol id="books" class="org">
+    <ol class="org">
         <h2>Group</h2>
         <p class="update cc_style">
         Last Modified : 
