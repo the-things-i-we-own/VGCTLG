@@ -47,6 +47,7 @@ fclose($fp);
             color: var(--list-text);
             display: block;
             transform: scale(1, 1.25);
+            transition:all .5s;
         }
 
         .org:hover p {
@@ -82,7 +83,7 @@ fclose($fp);
             left:0;
             width:100%;
             height:100%;
-            transition:all .2s;
+            transition:all .5s;
         }
         .org a:hover {
             border-bottom: var(--border-style);

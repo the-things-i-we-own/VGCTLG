@@ -47,6 +47,7 @@ fclose($fp);
             color: var(--list-text);
             display: block;
             transform: scale(1, 1.25);
+            transition:all .5s;
         }
 
         .org:hover p {
