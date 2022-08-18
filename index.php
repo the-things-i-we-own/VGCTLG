@@ -91,8 +91,7 @@ fclose($fp);
         #collection li p,
         form,
         .reset-button,
-        .collection p,
-        marquee {
+        .collection p {
             transform: scale(1, 1.1);
             font-family: var(--list-family);
         }
@@ -193,13 +192,7 @@ fclose($fp);
             color: var(--hover-color);
         }
         
-        header marquee:hover {
-            color: #fff;
-            background: var(--bg-color);
-        }
-        
-        header,
-        header marquee {
+        header {
             border-bottom: var(--border-style);
         }
         
@@ -276,9 +269,6 @@ fclose($fp);
 <body id="open">
 
     <header id="header">
-        <marquee id="marquee">
-            ここをクリックすると、（）が所有するもの一覧が表示されます。
-        </marquee>
         <nav id="nav">
             <h1>VG CTLG</h1>
             <span id="presents">
