@@ -49,10 +49,6 @@ fclose($fp);
             transform: scale(1, 1.25);
             transition:all .5s;
         }
-
-        .org:hover p {
-            color: var(--update-text);
-        }
         
         .org p b {
             font-size: 150%;
@@ -85,8 +81,12 @@ fclose($fp);
             height:100%;
             transition:all .2s;
         }
-        #people a:hover {
+        .org a:hover {
             border-bottom: var(--border-style);
+        }
+
+        #people:hover p {
+            color: var(--update-text);
         }
     </style>
 </head>
