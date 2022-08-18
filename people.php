@@ -86,7 +86,7 @@ fclose($fp);
             border-bottom: var(--hover-color);
         }
 
-        #people:hover p {
+        #people .list_toggle:hover p {
             color: var(--update-text);
         }
     </style>
