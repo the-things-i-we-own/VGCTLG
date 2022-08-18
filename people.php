@@ -85,14 +85,14 @@ fclose($fp);
             height:100%;
             transition:all .2s;
         }
-        .org a:hover {
+        #people a:hover {
             border-bottom: var(--border-style);
         }
     </style>
 </head>
 
 <body>
-    <ol id="books" class="org">
+    <ol class="org">
         <h2>People</h2>
         <p class="update cc_style">
         Last Modified : 

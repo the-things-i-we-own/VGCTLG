@@ -85,7 +85,7 @@ fclose($fp);
             height:100%;
             transition:all .5s;
         }
-        .org a:hover {
+        #group a:hover {
             border-bottom: var(--border-style);
         }
     </style>
