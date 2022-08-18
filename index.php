@@ -83,7 +83,7 @@ fclose($fp);
         h1,
         h2,
         .collection h2 {
-            transform: scale(1, 2);
+            transform: scale(1, 1.5);
             font-family: var(--text-family);
             font-weight: 500;
         }
