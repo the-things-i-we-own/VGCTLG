@@ -52,6 +52,7 @@ fclose($fp);
         
         .org p b {
             font-size: 150%;
+            font-family: var(--text-family);
             display: inline-block;
         }
         
