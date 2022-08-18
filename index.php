@@ -280,7 +280,7 @@
                         <label for="sale" class="label">$$$ FOR SALE $$$</label>
                     </li>
                     <li class="reset">
-                        <input type="reset" name="reset" value="View All" class="reset-button label">
+                        <input type="reset" name="reset" value="View All" class="reset-button label" onclick="greeting()">
                     </li>
                 </ol>
             </form>
