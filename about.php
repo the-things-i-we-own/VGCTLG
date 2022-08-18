@@ -94,7 +94,7 @@ fclose($fp);
         <p>挨拶文</p>
         <p>右にスクロールすると閲覧できるリストについて</p>
         <hr/>
-        <h2>絞り込みについて</h2>
+        <h2>Index</h2>
         <br/>
         <?php if (!empty($rows)): ?>
         <?php foreach ($rows as $row): ?>
