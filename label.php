@@ -86,7 +86,7 @@ fclose($fp);
             border-bottom: var(--border-style);
         }
 
-        #group .list_toggle:hover p {
+        #publisher .list_toggle:hover p {
             color: var(--hover-color);
         }
     </style>
