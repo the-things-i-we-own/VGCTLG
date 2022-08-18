@@ -290,7 +290,7 @@
     <main id="main">
         <ul class="mousedragscrollable">
             <li id="about" class="collection"></li>
-            <li id="test" class="collection"></li>
+            <li id="people" class="collection"></li>
         </ul>
     </main>
 
@@ -314,7 +314,7 @@
 
         $(function() {
             $("#about").load("about.php");
-            $("#test").load("test/index.php");
+            $("#people").load("people.php");
         })
     </script>
 </body>
