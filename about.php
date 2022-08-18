@@ -90,6 +90,7 @@ fclose($fp);
 
 <body>
     <ol id="about" class="org">
+        <br/>
         <p>挨拶文</p>
         <p>右にスクロールすると閲覧できるリストについて</p>
         <hr/>
