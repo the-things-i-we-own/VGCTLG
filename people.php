@@ -89,6 +89,9 @@ fclose($fp);
             width:100%;
             height:100%;
         }
+        .org a:hover {
+            background:#eee;
+        }
     </style>
 </head>
 
