@@ -83,7 +83,7 @@ fclose($fp);
         h1,
         h2,
         .collection h2 {
-            transform: scale(1, 1.5);
+            transform: scale(1, 2);
             font-family: var(--text-family);
             font-weight: 500;
         }
@@ -94,7 +94,7 @@ fclose($fp);
         .reset-button,
         .collection p,
         marquee {
-            transform: scale(1, 1.25);
+            transform: scale(1, 1.5);
             font-family: var(--list-family);
         }
         
