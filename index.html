@@ -60,8 +60,7 @@
         #collection li p,
         form,
         .reset-button,
-        .collection p,
-        #footer {
+        .collection p {
             transform: scale(1, 1.1);
             font-family: var(--list-family);
         }
@@ -141,15 +140,13 @@
         body,
         ._more:hover,
         header label:hover,
-        footer a:hover,
         #greeting p,
         #collection li {
             color: var(--text-color);
         }
         
         ._more,
-        header label,
-        footer a {
+        header label {
             color: var(--hover-color);
         }
         
@@ -157,13 +154,8 @@
             border-bottom: var(--border-style);
         }
         
-        footer {
-            border-top: var(--border-style);
-        }
-        
         ._more:hover,
-        header label:hover,
-        footer a:hover {
+        header label:hover {
             text-decoration: wavy underline;
             cursor: pointer;
         }
@@ -177,7 +169,6 @@
             max-width: 75%;
         }
         
-        #footer,
         .change #cover,
         .change #greeting,
         #print {
@@ -213,7 +204,6 @@
             #server {
                 display: none;
             }
-            #footer,
             #print {
                 display: block;
             }
