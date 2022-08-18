@@ -186,10 +186,10 @@ fclose($fp);
             color: var(--text-color);
         }
         
-        ._more,
-        header label,
-        footer a {
-            color: var(--hover-color);
+        header label {
+            color: var(--org-text);
+            background-color: var(--org-bg);
+            border: var(--org-border);
         }
         
         header {
