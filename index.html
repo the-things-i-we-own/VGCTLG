@@ -80,13 +80,7 @@
             display: block;
         }
 
-        #bought:checked~label,
-        #gift:checked~label,
-        #free:checked~label,
-        #made:checked~label,
-        #collaborations:checked~label,
-        #other:checked~label,
-        #sale:checked~label {
+        input:checked~label {
             text-decoration: double underline;
         }
         
@@ -248,32 +242,32 @@
                 <ol class="search-box">
                     <li>Index</li>
                     <li>
-                        <input type="radio" name="org" value="bought" id="bought">
-                        <label for="bought" class="label">bought</label>
+                        <input type="radio" name="org" value="art" id="art">
+                        <label for="art" class="label">art</label>
                     </li>
                     <li>
-                        <input type="radio" name="org" value="gift" id="gift">
-                        <label for="gift" class="label">gift</label>
+                        <input type="radio" name="org" value="design" id="design">
+                        <label for="design" class="label">design</label>
                     </li>
                     <li>
-                        <input type="radio" name="org" value="free" id="free">
-                        <label for="free" class="label">free or found</label>
+                        <input type="radio" name="org" value="fashion" id="fashion">
+                        <label for="fashion" class="label">fashion</label>
                     </li>
                     <li>
-                        <input type="radio" name="org" value="made" id="made">
-                        <label for="made" class="label">made</label>
+                        <input type="radio" name="org" value="internet" id="internet">
+                        <label for="internet" class="label">internet</label>
                     </li>
                     <li>
-                        <input type="radio" name="org" value="collaborations" id="collaborations">
-                        <label for="collaborations" class="label">collaborations</label>
+                        <input type="radio" name="org" value="music" id="music">
+                        <label for="music" class="label">music</label>
                     </li>
                     <li>
-                        <input type="radio" name="org" value="other" id="other">
-                        <label for="other" class="label">other</label>
+                        <input type="radio" name="org" value="video" id="video">
+                        <label for="video" class="label">video</label>
                     </li>
                     <li>
-                        <input type="radio" name="org" value="sale" id="sale">
-                        <label for="sale" class="label">$$$ FOR SALE $$$</label>
+                        <input type="radio" name="org" value="writer" id="writer">
+                        <label for="writer" class="label">writer</label>
                     </li>
                     <li class="reset">
                         <input type="reset" name="reset" value="View All" class="reset-button label" onclick="window.location.reload(true);">
