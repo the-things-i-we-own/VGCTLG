@@ -82,7 +82,7 @@ fclose($fp);
             transition:all .2s;
         }
         .org a:hover {
-            border-bottom: var(--border-style);
+            border-bottom: var(--hover-color);
         }
 
         #people:hover p {

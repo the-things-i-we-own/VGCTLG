@@ -86,7 +86,7 @@ fclose($fp);
         }
 
         #group:hover p {
-            color: var(--update-text);
+            color: var(--hover-color);
         }
     </style>
 </head>
