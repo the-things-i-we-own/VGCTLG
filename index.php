@@ -64,7 +64,8 @@
         #collection li p,
         form,
         .reset-button,
-        .collection p {
+        .collection p,
+        #footer {
             transform: scale(1, 1.1);
             font-family: var(--list-family);
         }
@@ -295,7 +296,7 @@
 
     <footer id="footer">
         <address id="print">
-            <span class="cc_style">
+            <span>
                 <?php
                 echo $_SERVER['HTTP_HOST'];
                 echo $_SERVER['REQUEST_URI'];
