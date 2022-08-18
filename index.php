@@ -88,7 +88,6 @@ fclose($fp);
             font-weight: 500;
         }
         
-        #server p,
         #collection li p,
         form,
         .reset-button,
@@ -108,7 +107,7 @@ fclose($fp);
             max-width: 75%;
         }
         
-        .change .mousedragscrollable {
+        .mousedragscrollable {
             display: block;
         }
 
@@ -122,16 +121,8 @@ fclose($fp);
             text-decoration: double underline;
         }
         
-        #server p {
-            color: var(--update-text);
-        }
-        
-        #server:hover p {
-            text-shadow: 1px 1px 2px #fff, 0 0 1em #fff, 0 0 0.2em #fff;
-        }
-        
-        .change .mousedragscrollable::-webkit-scrollbar-thumb,
-        .change .mousedragscrollable li::-webkit-scrollbar-thumb {
+        .mousedragscrollable::-webkit-scrollbar-thumb,
+        .mousedragscrollable li::-webkit-scrollbar-thumb {
             background: var(--list-bg);
             border: var(--border-style);
         }
@@ -192,13 +183,8 @@ fclose($fp);
         header label:hover,
         footer a:hover,
         #greeting p,
-        #server:hover p,
         #collection li {
             color: var(--text-color);
-        }
-
-        #main {
-            background-color: var(--bg-color);
         }
         
         ._more,
@@ -228,11 +214,6 @@ fclose($fp);
             cursor: pointer;
         }
         
-        #main {
-            min-height: 77.5vh;
-            max-height: 77.5vh;
-        }
-        
         #presents {
             margin: 0.5rem 0;
         }
@@ -243,10 +224,8 @@ fclose($fp);
         }
         
         #footer,
-        .mousedragscrollable,
         .change #cover,
         .change #greeting,
-        .change #server,
         #print {
             display: none;
         }
@@ -258,10 +237,6 @@ fclose($fp);
             #images .list_item {
                 margin: 1.75vh 0;
             }
-            #main {
-                min-height: 77.5vh;
-                max-height: 77.5vh;
-            }
         }
         
         @media screen and (max-width: 750px) {
@@ -270,10 +245,6 @@ fclose($fp);
             }
             #images .list_item {
                 margin: 1.25vh 0;
-            }
-            #main {
-                min-height: 75vh;
-                max-height: 75vh;
             }
         }
         
@@ -297,10 +268,6 @@ fclose($fp);
             }
             #greeting p {
                 font-size: 1rem;
-            }
-            #main {
-                min-height: 87vh;
-                max-height: 87vh;
             }
         }
     </style>
@@ -357,39 +324,6 @@ fclose($fp);
     </header>
 
     <main id="main">
-        <div id="cover">
-            <ol id="images" class="org">
-                <?php if (!empty($rows)): ?>
-                <?php foreach ($rows as $row): ?>
-                <li class="list_item list_toggle <?=h($row[1])?>" data-org="<?=h($row[0])?>">
-                    <img src="<?=h($row[2])?>">
-                </li>
-                <?php endforeach; ?>
-                <?php else: ?>
-                <li class="list_item list_toggle min" data-org="test">
-                    <img src="/logo.png">
-                </li>
-                <?php endif; ?>
-            </ol>
-        </div>
-        <div id="server">
-            <p>
-                <?php
-                    echo $_SERVER['SERVER_PROTOCOL'];
-                ?>
-                <?php
-                    echo $_SERVER['HTTPS'];
-                ?>
-                <?php
-                    echo $_SERVER['SERVER_ADDR'];
-                ?>
-                <br/>
-                <?php
-                    echo $_SERVER['SERVER_NAME'];
-                    echo $_SERVER['REQUEST_URI'];
-                ?>
-            </p>
-        </div>
         <ul class="mousedragscrollable">
             <li id="about" class="collection"></li>
             <li id="test" class="collection"></li>
@@ -409,17 +343,6 @@ fclose($fp);
     </footer>
 
     <script type="text/javascript ">
-        let marquee = document.querySelector('#marquee');
-        let box = document.querySelector('#open');
-
-        let btnToggleclass = function(el) {
-            el.classList.toggle('change');
-        }
-
-        marquee.addEventListener('click', function() {
-            btnToggleclass(box);
-        }, false);
-
         $('a[href^="# "]').click(function() {
             var href = $(this).attr("href ");
             var target = $(href == "#" || href == " " ? 'html' : href);
