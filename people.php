@@ -65,7 +65,7 @@ fclose($fp);
             margin: 0;
             padding: 0.125rem 0.25rem;
             text-decoration: none;
-            color: var(--list-text);
+            color: var(--org-text);
             background: var(--org-bg);
             border: var(--org-border);
             border-radius: 0.25rem;
