@@ -111,10 +111,6 @@ fclose($fp);
             <p>カテゴリの説明</p>
         </li>
         <?php endif; ?>
-        <br/>
-        <p>ORG
-            <a href="https://creative-community.space/org/" target="_blank"></a>
-        </p>
     </ol>
 </body>
 
