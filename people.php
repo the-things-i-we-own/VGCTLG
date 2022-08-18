@@ -84,7 +84,7 @@ fclose($fp);
         }
         .org a {
             position:absolute;
-            background:#fff;
+            border-bottom:dotted 1px #fff;
             top:0;
             left:0;
             width:100%;
@@ -92,7 +92,7 @@ fclose($fp);
             transition:all .2s;
         }
         .org a:hover {
-            background:#eee;
+            border-bottom:dotted 1px #111;
         }
     </style>
 </head>
