@@ -1,28 +1,3 @@
-<?php
-function h($str) {
-    return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
-}
-$org = (string)filter_input(INPUT_POST, 'org');
-$size = (string)filter_input(INPUT_POST, 'size');
-$img = (string)filter_input(INPUT_POST, 'img');
-$title = (string)filter_input(INPUT_POST, 'title');
-$text = (string)filter_input(INPUT_POST, 'text');
-
-$fp = fopen('img.csv', 'a+b');
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    flock($fp, LOCK_EX);
-    fputcsv($fp, [$org, $size, $img, $title, $text]);
-    rewind($fp);
-}
-
-flock($fp, LOCK_SH);
-while ($row = fgetcsv($fp)) {
-    $rows[] = $row;
-}
-flock($fp, LOCK_UN);
-fclose($fp);
-
-?>
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -54,12 +29,10 @@ fclose($fp);
     <script src="https://creative-community.space/coding/js/tone/StartAudioContext.js"></script>
     <script src="https://creative-community.space/coding/js/mousedragscrollable/scrollable.js"></script>
     <script src="https://creative-community.space/org/searchBox.js"></script>
-    <script src="index.js"></script>
 
     <link rel="stylesheet" href="https://creative-community.space/org/index.css" />
     <link rel="stylesheet" href="https://creative-community.space/org/searchBox.css" />
     <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="cover.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <style>
@@ -306,7 +279,7 @@ fclose($fp);
                         <label for="sale" class="label">$$$ FOR SALE $$$</label>
                     </li>
                     <li class="reset">
-                        <input type="reset" name="reset" value="View All" class="reset-button label" onclick="greeting()">
+                        <input type="reset" name="reset" value="View All" class="reset-button label">
                     </li>
                 </ol>
             </form>
@@ -317,7 +290,6 @@ fclose($fp);
         <ul class="mousedragscrollable">
             <li id="about" class="collection"></li>
             <li id="test" class="collection"></li>
-            <li id="img" class="collection"></li>
         </ul>
     </main>
 
@@ -342,7 +314,6 @@ fclose($fp);
         $(function() {
             $("#about").load("about.php");
             $("#test").load("test/index.php");
-            $("#img").load("img.php");
         })
     </script>
 </body>
