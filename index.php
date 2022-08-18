@@ -94,7 +94,7 @@ fclose($fp);
         .reset-button,
         .collection p,
         marquee {
-            transform: scale(1, 1.5);
+            transform: scale(1, 1.1);
             font-family: var(--list-family);
         }
         
