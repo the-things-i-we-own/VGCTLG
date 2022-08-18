@@ -27,7 +27,7 @@ fclose($fp);
 <html lang="ja">
 
 <head>
-    <title>Title | The Things I (We) Own</title>
+    <title>Index | VG CTLG</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
@@ -60,20 +60,22 @@ fclose($fp);
     <link rel="stylesheet" href="https://creative-community.space/org/searchBox.css" />
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="cover.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <style>
         :root {
-            --text-color: red;
-            --text-family: "Courier New", Courier, monospace;
+            --text-color: #111;
+            --text-family: 'Great Vibes', cursive;
             --hover-color: blue;
-            --border-style: 1px dashed green;
-            --bg-color: yellow;
+            --border-style: 1px dashed #111;
+            --bg-color: transparent;
             --list-bg: transparent;
-            --list-text: green;
-            --list-family: "Courier New", Courier, monospace;
-            --org-text: blue;
-            --org-bg: green;
-            --org-border: solid 1px blue;
-            --update-text: #fff;
+            --list-text: #111;
+            --list-family: 'Lucida Console', Courier, monospace;
+            --org-text: #fff;
+            --org-bg: #111;
+            --org-border: solid 1px #111;
+            --update-text: #eee;
         }
         
         #greeting #text,
