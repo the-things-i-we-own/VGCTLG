@@ -90,7 +90,6 @@ fclose($fp);
 
 <body>
     <ol id="about" class="org">
-        <h2>このホームページについて</h2>
         <p>挨拶文</p>
         <p>右にスクロールすると閲覧できるリストについて</p>
         <hr/>
@@ -121,8 +120,6 @@ fclose($fp);
             <a href="https://github.com/the-things-i-we-own" target="_blank">GitHub</a>
         </p>
     </ol>
-
-    <script src="index.js"></script>
 </body>
 
 </html>
