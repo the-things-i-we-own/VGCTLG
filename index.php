@@ -311,13 +311,13 @@ fclose($fp);
             ここをクリックすると、（）が所有するもの一覧が表示されます。
         </marquee>
         <nav id="nav">
-            <h1>ホームページのタイトル</h1>
+            <h1>VG CTLG</h1>
             <span id="presents">
                 <img src="https://creative-community.space/org/qr.png" width="50rem">
             </span>
             <form>
                 <ol class="search-box">
-                    <li>絞り込み</li>
+                    <li>Index</li>
                     <li>
                         <input type="radio" name="org" value="bought" id="bought">
                         <label for="bought" class="label">bought</label>
